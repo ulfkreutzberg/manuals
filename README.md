@@ -144,6 +144,7 @@ sudo reboot
 ```
 ##Netzwerkstuff
 ```
+apt-get install bridge-utils
 sudo nano /etc/network/interfaces
 ```
 Einmal ein Interface mit der FFRL Public Nat IPv4 anlegen
