@@ -160,11 +160,11 @@ Und ein Bridge Interface für das FF Netz
 ```
 auto br0
 iface br0 inet static
-        address 172.17.0.1
+        address 172.16.0.1
         netmask 255.255.0.0
         bridge_ports none
         bridge_stp no
-        post-up ip route add 172.17.0.0/16 dev br0 table 42
+        post-up ip route add 172.16.0.0/16 dev br0 table 42
 
 iface br0 inet6 static
         address 2a03:2260:120:xxx::1
